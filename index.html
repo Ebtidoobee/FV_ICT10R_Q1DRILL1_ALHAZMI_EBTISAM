@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Average Score Finder</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: url("https://t3.ftcdn.net/jpg/09/03/51/94/360_F_903519411_2EmXSXIlRTi1pdZw1Fh8BPe516ux5FlW.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .bck {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 800px; 
+        }
+
+        .bck2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        .btn-custom {
+            background-color: #b19cd9; 
+            border: none;
+            color: white;
+            font-weight: 600;
+        }
+
+        .btn-custom:hover {
+            background-color: #a084ca; 
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body class="container mt-4"> 
+    <script type="py" src="Main.py"></script>
+
+    <center>
+        <div class="bck">
+            <div class="bck2">
+                <h1 style="color: white;">Simple Average Score Finder</h1> 
+            </div>
+
+            <form>
+                <br><br>
+                <label for="input1" class="bck2" style="color: white;">Enter the first score:</label>
+                <br><br>
+                <input type="number" id="input1" class="form-control mb-3" placeholder="Enter a number">
+                <br><br>
+
+                <label for="input2" class="bck2" style="color: white;">Enter the second score:</label>
+                <br><br>
+                <input type="number" id="input2" class="form-control mb-3" placeholder="Enter a number">
+                <br><br>
+        
+                <button type="button" id="btn1" class="btn btn-custom mb-3" py-click="adding_numbers">Compute</button>
+
+                <div class="bck2">
+                    <p style="color: white;">The average score is:</p>
+                    <div id="output1" class="form-control mb-3" style="color: black;"></div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p>© 2025 Average finder| Made by Ebtiboo</p>
+        </footer>
+    </center>
+
+</body>
+</html>
